@@ -32,6 +32,7 @@ public class StudentController {
 
 	@PostMapping("/add-student")
 	public Student createStudent(@RequestBody Student student) {
+		System.out.println("first commit");
 		System.out.println("in student controller");
 		return studentService.createStudent(student);
 	}
